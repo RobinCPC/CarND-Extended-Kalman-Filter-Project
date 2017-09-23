@@ -1,4 +1,37 @@
-# Extended Kalman Filter Project Starter Code
+# Extended Kalman Filter Project
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+
+[//]: # (Image References)
+[image1]: ./result/Listen_Both.png
+[image2]: ./result/Only_Lidar.png
+[image3]: ./result/Only_Radar.png
+
+## Result
+I haved finished the core part of Extenal Kalman Filter, and my result of RMSE values satify the thresholds listed in the rubic.
+In addition, I add CLI command to `main.cpp` to let user choose which sensor to measurement. 
+
+Example:
+``` bash
+# measure both (Lidar and Radar)
+./ExtendedKF 
+# or
+./ExtendedKF -s B
+# only measure Lidar
+./ExtendedKF -s L
+# only measure Radar
+./ExtendedKF -s R
+```
+Here is the RMSE value of three siutation:
+
+| *Lidar and Radar*   | *Only Lidar*        | *Only Radar*        |
+| :-------------:     | :-------------:     | :-------------:     |
+| ![alt text][image1] | ![alt text][image2] | ![alt text][image3] |
+
+---
+
+Below is original README from Udacity.
+
+## Extended Kalman Filter Project Starter Code
 Self-Driving Car Engineer Nanodegree Program
 
 In this project you will utilize a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower that the tolerance outlined in the project rubric. 
