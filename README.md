@@ -33,6 +33,7 @@ Here are the RMSE value of three situation:
 The result shows that Lidar will provide more precise measurements than Radar does.
 
 Here are the final scene of three situation:
+
 | *Lidar and Radar*   | *Only Lidar*        | *Only Radar*        |
 | :-------------:     | :-------------:     | :-------------:     |
 | ![alt text][image1] | ![alt text][image2] | ![alt text][image3] |
