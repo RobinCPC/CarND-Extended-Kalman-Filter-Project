@@ -7,7 +7,7 @@
 [image3]: ./result/Only_Radar.png
 
 ## Result
-I haved finished the core part of Extenal Kalman Filter, and my result of RMSE values satify the thresholds listed in the rubic.
+I have finished the core part of Extended Kalman Filter, and my result of RMSE values satisfy the thresholds listed in the rubric.
 In addition, I add CLI command to `main.cpp` to let user choose which sensor to measurement. 
 
 Example:
@@ -21,8 +21,18 @@ Example:
 # only measure Radar
 ./ExtendedKF -s R
 ```
-Here is the RMSE value of three siutation:
+Here are the RMSE value of three situation:
 
+|         | *Lidar & Radar* | *Only Lidar* | *Only Radar* |
+| :---:   | :----------:      | :----------: | :----------: |
+| RMSE_px | 0.0973            | 0.1222       | 0.1886       |
+| RMSE_py | 0.0855            | 0.0984       | 0.2897       |
+| RMSE_vx | 0.4513            | 0.5825       | 0.5928       |
+| RMSE_vy | 0.4399            | 0.4567       | 0.7273       |
+
+The result shows that Lidar will provide more precise measurements than Radar does.
+
+Here are the final scene of three situation:
 | *Lidar and Radar*   | *Only Lidar*        | *Only Radar*        |
 | :-------------:     | :-------------:     | :-------------:     |
 | ![alt text][image1] | ![alt text][image2] | ![alt text][image3] |
